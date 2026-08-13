@@ -1,0 +1,5 @@
+print("Hello, World!")
+read = input("Enter your name: ")
+read2 = input("Enter your age: ")
+print(f"Hello, {read}! You are {read2} years old.")
+input("Press Enter to continue...")
