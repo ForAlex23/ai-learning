@@ -1,5 +1,5 @@
 print("Hello, World!")
-read = input("Enter your name: ")
-read2 = input("Enter your age: ")
-print(f"Hello, {read}! You are {read2} years old.")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print(f"Hello, {name}! You are {age} years old.")
 input("Press Enter to continue...")
