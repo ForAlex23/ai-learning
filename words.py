@@ -9,9 +9,11 @@ clean_text = ''.join(
 words = clean_text.split()
 total_words = len(words)
 print(f"Total words: {total_words}")
+if not words:
+    print("No words found.")
+    sys.exit(1)
 longest_word = max(words, key=len)
 print(f"Longest word: {longest_word}")
 counter = Counter(words)
 for word, count in counter.most_common(5):
     print(f"{word}: {count}")
-input("Press Enter to continue...")
