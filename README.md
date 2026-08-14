@@ -14,7 +14,9 @@ python words.py   # ввод текста, завершить Ctrl+Z Enter (Wind
 ## Запуск
 python stats.py # ввод расположения файла с текстом
 python todo.py
+contacts.py
 
 ## Что умеет
 - stats.py — статистика по тексту из файла
 - todo.py — список задач
+- contacts.py - справочник контактов
