@@ -10,7 +10,7 @@ python words.py   # ввод текста, завершить Ctrl+Z Enter (Wind
 - words.py — статистика по тексту
 
 # ai-learning
-Учебные скрипты Python — неделя 1.
+Учебные скрипты Python — неделя 2.
 ## Запуск
 python stats.py # ввод расположения файла с текстом
 python todo.py
