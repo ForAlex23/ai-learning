@@ -19,3 +19,10 @@ python contacts.py
 - stats.py — статистика текста из файла
 - todo.py — список задач (add / list / done / quit)
 - contacts.py — справочник (add / find / delete / list / quit)
+
+## Неделя 3 - Учебные скрипты Python — неделя 3.
+
+### Запуск
+python todo_save.py
+### Что умеет
+- todo_save.py — список задач (add / list / done / quit), задачи сохраняются в файл tasks.json
