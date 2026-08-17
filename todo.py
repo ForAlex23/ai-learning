@@ -1,3 +1,37 @@
+def add_task(tasks):
+    print("Добавление задачи")
+    task_text = input("Введите задачу: ")
+    task = {
+        "id": len(tasks) + 1,
+        "task": task_text,
+        "done": False
+    }
+    tasks.append(task)
+    print("Задача добавлена.")
+
+def list_tasks(tasks):
+    print("Список задач")
+    for task in tasks:
+        print(f"{task['id']}. {task['task']} - {'Выполнено' if task['done'] else 'В работе'}")
+
+def done_task(tasks):
+    print("Отметить задачу")
+    task_id = int(input("Введите номер задачи: "))
+    for task in tasks:
+        if task["id"] == task_id:
+            task["done"] = True
+            print("Задача выполнена.")
+            break
+    else:
+        print("Задача не найдена.")
+
+def quit_program():
+    print("Выход из программы.")
+    exit()
+
+def unknown_command():
+    print("Неизвестная команда.")
+
 tasks = []
 
 while True:
@@ -9,48 +43,17 @@ while True:
     choice = input("Выберите действие: ")
 
     if choice == "1":
-        print("Добавление задачи")
-
-        task_text = input("Введите задачу: ")
-
-        task = {
-            "id": len(tasks) + 1,
-            "task": task_text,
-            "done": False
-        }
-
-        tasks.append(task)
+        add_task(tasks)
 
     elif choice == "2":
-        print("Список задач")
-
-        for task in tasks:
-            print(
-                f"{task['id']}. "
-                f"{task['task']} - "
-                f"{'Выполнено' if task['done'] else 'В работе'}"
-            )
+        list_tasks(tasks)
 
     elif choice == "3":
-        print("Отметить задачу")
-
-        task_id = int(input("Введите номер задачи: "))
-
-        found = False
-
-        for task in tasks:
-            if task["id"] == task_id:
-                found = True
-                task["done"] = True
-                print("Задача выполнена.")
-                break
-
-        if not found:
-            print("Задача не найдена.")
+        done_task(tasks)
 
     elif choice == "4":
-        print("Выход из программы.")
+        quit_program()
         break
 
     else:
-        print("Неизвестная команда.")
+        unknown_command()
