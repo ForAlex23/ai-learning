@@ -1,5 +1,5 @@
 # ai-learning
-Учебные скрипты Python — неделя 1.
+## Неделя 1 - Учебные скрипты Python — неделя 1.
 ## Запуск
 python hello.py
 python calc.py
@@ -9,14 +9,13 @@ python words.py   # ввод текста, завершить Ctrl+Z Enter (Wind
 - calc.py — калькулятор в цикле
 - words.py — статистика по тексту
 
-# ai-learning
-Учебные скрипты Python — неделя 2.
-## Запуск
-python stats.py # ввод расположения файла с текстом
-python todo.py
-contacts.py
+## Неделя 2 - Учебные скрипты Python — неделя 2.
 
-## Что умеет
-- stats.py — статистика по тексту из файла
-- todo.py — список задач
-- contacts.py - справочник контактов
+### Запуск
+python stats.py
+python todo.py
+python contacts.py
+### Что умеет
+- stats.py — статистика текста из файла
+- todo.py — список задач (add / list / done / quit)
+- contacts.py — справочник (add / find / delete / list / quit)
