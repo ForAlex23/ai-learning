@@ -59,9 +59,10 @@ def expenses_by_category(expenses):    # функция вычисления с�
     category =  input("Введите категорию: ").strip()
     if not category:
         print("Категория не может быть пустой")
+        return
     total = 0
     for expense in expenses:
-        if expense['category'] == category:
+        if expense['category'].lower() == category.lower():
             total += expense['amount']
     if total == 0:
         print("Нет расходов по категории")
