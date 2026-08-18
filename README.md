@@ -27,4 +27,4 @@ python todo_save.py
 python contacts_save.py
 ### Что умеет
 - todo_save.py — список задач (add / list / done / quit), задачи сохраняются в файл tasks.json
-- contacts_save.py - грузить контакты, добавлять, искать, удалять, показывать список, сохранять в в файл contacts.json
+- contacts_save.py — грузить контакты, добавлять, искать, удалять, показывать список, сохранять в в файл contacts.json
