@@ -63,6 +63,9 @@ def expenses_by_category(expenses):    # функция вычисления с�
     for expense in expenses:
         if expense['category'] == category:
             total += expense['amount']
+    if total == 0:
+        print("Нет расходов по категории")
+        return
     print(f"Сумма расходов по категории {category}: {total}")
 
 def quit_program():    # функция выхода из программы
