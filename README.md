@@ -28,3 +28,4 @@ python contacts_save.py
 ### Что умеет
 - todo_save.py — список задач (add / list / done / quit), задачи сохраняются в файл tasks.json
 - contacts_save.py — грузить контакты, добавлять, искать, удалять, показывать список, сохранять в в файл contacts.json
+- expenses.py — учет расходов, добавлять расходы, вычислять по фильтру сумму расходов, сохранять в в файл contacts.json
