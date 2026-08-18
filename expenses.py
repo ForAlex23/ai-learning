@@ -4,18 +4,18 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILENAME = os.path.join(BASE_DIR, "expenses.json")
 
 
-def load_expenses():    # функция загрузки расходов из файла
+def load_expenses():
     try:
         with open(FILENAME, "r", encoding="utf-8") as file:
             return json.load(file)
     except FileNotFoundError:
         return []
 
-def save_expenses(expenses):    # функция сохранения расходов в файл
-    try:
-        with open(FILENAME, "w", encoding="utf-8") as file:
-            json.dump(expenses, file, ensure_ascii=False, indent=2)
-    
+def save_expenses(expenses):
+    with open(FILENAME, "w", encoding="utf-8") as file:
+        json.dump(expenses, file, ensure_ascii=False, indent=2)
+
+
 def add_expense(expenses):    # функция добавления расхода
     amount = input("Введите сумму расхода: ")
     try:
